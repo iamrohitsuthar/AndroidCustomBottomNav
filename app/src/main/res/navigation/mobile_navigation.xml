@@ -12,14 +12,20 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.rohitsuthar.androidcustombottomnav.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_tasks"
+        android:name="com.rohitsuthar.androidcustombottomnav.ui.tasks.TasksFragment"
+        android:label="@string/title_tasks"
+        tools:layout="@layout/fragment_tasks" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.rohitsuthar.androidcustombottomnav.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_contests"
+        android:name="com.rohitsuthar.androidcustombottomnav.ui.contests.ContestsFragment"
+        android:label="@string/title_contests"
+        tools:layout="@layout/fragment_contests" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.rohitsuthar.androidcustombottomnav.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
