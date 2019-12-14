@@ -1,4 +1,4 @@
-package com.rohitsuthar.androidcustombottomnav;
+package com.rohitsuthar.androidcustombottomnav.others;
 
 import android.content.Context;
 import android.graphics.Canvas;
