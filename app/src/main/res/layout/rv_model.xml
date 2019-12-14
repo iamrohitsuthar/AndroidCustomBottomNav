@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="150dp"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/white"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/game_thumbnail"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cricket_hero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:text="Cricket Her"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_thumb"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48000002" />
+
+        <ImageView
+            android:id="@+id/img_coins"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_gamename"
+            app:layout_constraintStart_toEndOf="@+id/img_thumb"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_coins" />
+
+        <TextView
+            android:id="@+id/tv_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:text="5000"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_gamename"
+            app:layout_constraintStart_toEndOf="@+id/img_coins"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:text="Free"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_thumb"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gamename"
+            app:layout_constraintVertical_bias="0.75" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:text="6hr:4m:44s"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_type" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:text="LIVE"
+            app:layout_constraintBottom_toTopOf="@+id/tv_users_total"
+            app:layout_constraintEnd_toStartOf="@+id/img_status"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_users_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gamename"
+            app:layout_constraintEnd_toStartOf="@+id/tv_users_total"
+            app:layout_constraintTop_toTopOf="@+id/tv_gamename" />
+
+        <TextView
+            android:id="@+id/tv_users_total"
+            android:layout_width="41dp"
+            android:layout_height="19dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:text="/3000"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_users_current"
+            app:layout_constraintEnd_toStartOf="@+id/img_users"
+            app:layout_constraintTop_toTopOf="@+id/tv_users_current" />
+
+        <ImageView
+            android:id="@+id/img_status"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:tint="@color/green"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_status"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/liveicon" />
+
+        <ImageView
+            android:id="@+id/img_users"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:tint="@color/dark_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_users_total"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_users_total"
+            app:srcCompat="@drawable/ic_group" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

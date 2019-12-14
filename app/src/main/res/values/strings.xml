@@ -2,10 +2,11 @@
     <string name="app_name">AndroidCustomBottomNav</string>
     <string name="title_home">Home</string>
     <string name="title_tasks">Tasks</string>
-    <string name="title_contests">Contests</string>
+    <string name="title_contests">Contest</string>
     <string name="title_profile">Profile</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_thumbnail">Game Thumbnail</string>
 
 </resources>
