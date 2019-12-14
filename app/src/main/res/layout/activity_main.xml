@@ -62,6 +62,7 @@
         app:elevation="10dp"
         app:srcCompat="@drawable/ic_search"
         android:tint="@android:color/white"
+        app:rippleColor="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toStartOf="@+id/nav_host_fragment"
         app:layout_constraintHorizontal_bias="0.5"
